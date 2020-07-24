@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@469&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  color: #000;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leaflet-container {
+  margin: 1rem auto;
+  height: 500px;
+  width: 600px;
+  border: 4px solid #000;
+}
+
+.markerClusterLabel {
+  font-size: 0.9em;
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.markerClusterSmall,
+.markerClusterMedium,
+.markerClusterLarge,
+.markerClusterLargeXL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffaf00;
+  filter: drop-shadow(0 0 5px black);
+  border-radius: 50%;
+}
+.markerClusterSmall {
+  padding: 10px;
+}
+.markerClusterMedium {
+  padding: 15px;
+}
+.markerClusterLarge {
+  padding: 17px;
+}
+.markerClusterLargeXL {
+  padding: 20px;
 }
